@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <center>
+      <h1><a href="/insert/">INSERT DATA</a></h1>
+    </center>
+
+    <table border="2px" align="center">
+      <tr>
+        <th>E_ID</th>
+        <th>E_NAME</th>
+        <th>E_EMAIL</th>
+        <th>E_ONTACT</th>
+        <th>ACTON</th>
+      </tr>
+      <tbody>
+        {% for data in employees %}
+        <tr>
+          <td>{{data.eid}}</td>
+          <td>{{data.ename}}</td>
+          <td>{{data.eemail}}</td>
+          <td>{{data.econtact}}</td>
+          <td><a href="/delete/{{data.eid}}">Delete</a></td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+  </body>
+</html>

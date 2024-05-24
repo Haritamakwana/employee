@@ -1,0 +1,43 @@
+<html>
+  <head> </head>
+  <body>
+    <form method="post" action="/insert/">
+      {%csrf_token%}
+      <table>
+        <tr>
+          <td>employee name</td>
+          <td>
+            <input
+              type="text"
+              placeholder="employeee name"
+              name="ename"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>employee email</td>
+          <td>
+            <input
+              type="text"
+              placeholder="employeee email"
+              name="eemail"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>employee conatct</td>
+          <td>
+            <input
+              type="text"
+              placeholder="employeee contact"
+              name="econtact"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td><button type="submit">Submit</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
